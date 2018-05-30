@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-webpack-template",
+  "version": "0.0.0",
+  "description": "Test for an AngularJS Webpack project template",
+  "repository": "https://github.com/FedeBell94/angularjs-webpack-template",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.0.0",
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "setup": "npm install",
+    "start": "npm run build  | npm run serve",
+    "build": "webpack --config=./config/webpack.config.js --display=none",
+    "serve": "live-server . --host=localhost --port=8080 --watch=./dist,./public --entry-file=./public/index.html"
+  }
+}
