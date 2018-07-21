@@ -5,10 +5,12 @@
   "repository": "https://github.com/FedeBell94/angularjs-webpack-template",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.7.0"
+    "angular": "^1.7.0",
+    "angular-ui-router": "^1.0.18"
   },
   "devDependencies": {
     "webpack": "^3.0.0",
+    "html-loader": "^0.5.5",
     "live-server": "^1.2.0"
   },
   "scripts": {

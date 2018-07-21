@@ -4,10 +4,13 @@ module.exports = {
         filename: './dist/bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.js$/,
-                exclude: /node_modules/
+                test: /\.html$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'html-loader'
+                }
             }
         ]
     },

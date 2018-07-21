@@ -1,5 +1,4 @@
 import angular from 'angular';
+import './states/application-state';
 
-angular.element(document).ready(() => {
-    console.log('This is an Angular test.');
-});
+angular.module("myCustomModule", ['custom-module']);

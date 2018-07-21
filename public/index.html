@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test Webpack Angular</title>
-    </head>
-    <body>
-        <p>This is a test project with Angular and Webpack</p>
         <script type="module" src="../dist/bundle.js"></script>
+    </head>
+    <body ng-app="myCustomModule">
+        <p>Custom project with Angular and Webpack</p>
+        <ui-view></ui-view>
     </body>
 </html>
